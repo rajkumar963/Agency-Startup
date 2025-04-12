@@ -3,12 +3,12 @@ import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-16 px-6">
+    <footer className="bg-black py-16 px-2">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center mb-6">
-              <div className="w-12 h-11 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
+              <div className="w-12 h-10 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
                 <span className="text-white text-lg font-bold">TSW</span>
               </div>
               <span className="font-montserrat font-bold text-xl text-white">The Startup Wallah</span>

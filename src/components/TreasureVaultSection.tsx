@@ -26,7 +26,7 @@ const vaultItems = [
     title: 'Team Building',
     description: 'Strategies for building high-performing teams',
     icon: Users,
-    color: 'from-purple-600 to-pink-600'
+    color: 'from-vibrant-blue  to-pink-800'
   },
   {
     title: 'Market Research',
@@ -83,15 +83,15 @@ const TreasureVaultSection = () => {
   }, []);
 
   return (
-    <section id="khajna" className="section bg-dark relative">
+    <section id="khajna" className="section bg-dark relative ">
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Founder's <span className="gradient-text">Treasure Vault</span>
+        <div className="text-center max-w-4xl mx-auto mb-16">
+          <h2 className="text-2xl md:text-4xl font-bold mb-6">
+          The Founder's <span className="gradient-text">Treasure Vault</span>
           </h2>
-          <p className="text-lg text-white/70">
-            Discover our collection of founder resources designed to help you navigate every stage of your entrepreneurial journey.
-          </p>
+          <p className="text-lg text-white/70 ">
+            A curated collection of essential resources. Legal documents, pitch decks, investor directories, and growth frameworks—all meticulously organized by startup stage and challenge.         
+         </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

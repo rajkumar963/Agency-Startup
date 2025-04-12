@@ -22,7 +22,7 @@ export default function Auth() {
       setIsLoading(false);
       toast({
         title: "Login successful",
-        description: "Welcome back to FounderForge!",
+        description: "Welcome back to TheStartupWallah!",
       });
       navigate('/');
     }, 1500);
@@ -36,22 +36,22 @@ export default function Auth() {
       setIsLoading(false);
       toast({
         title: "Google login successful",
-        description: "Welcome to FounderForge!",
+        description: "Welcome to TheStartupWallah!",
       });
       navigate('/');
     }, 1500);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-dark to-gray-900 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-dark to-gray-900 p-4 mt-[80px]">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <div className="flex justify-center mb-4">
             <a href="/" className="flex items-center">
-              <div className="w-10 h-10 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
-                <span className="text-white text-lg font-bold">FF</span>
+              <div className="w-12 h-10 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
+                <span className="text-white text-lg  font-bold">TSW</span>
               </div>
-              <span className="font-montserrat font-bold text-xl">FounderForge</span>
+              <span className="font-montserrat font-bold text-xl">The Startup Wallah</span>
             </a>
           </div>
           <CardTitle className="text-2xl text-center">Welcome</CardTitle>

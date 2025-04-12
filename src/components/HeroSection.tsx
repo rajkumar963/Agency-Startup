@@ -1,8 +1,11 @@
 
 import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
+import { useNavigate } from 'react-router-dom';
+
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section className="pt-28 px-3 pb-20  md:pt-36 md:pb-32 bg-dark relative overflow-hidden">
       {/* Background gradient effect */}
@@ -24,15 +27,14 @@ const HeroSection = () => {
           </div>
           
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-            Access the tools, knowledge, and community you need to turn your vision into reality. Join thousands of founders who've accelerated their startup journey with us.
-          </p>
-          
+            We simplify startup chaos with smart tools, expert help, and a community that’s got your back—so you can build with clarity and grow faster.
+          </p> 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <Button size="lg" className="bg-gradient-purple-blue hover:opacity-90 transition-opacity text-lg px-8">
+            <a href="https://wa.me/message/DB45B2CA3YBTE1" className=" bg-gradient-purple-blue hover:opacity-90 transition-opacity text-lg px-5 flex items-center justify-center gap-2 py-2">
               Join the Community
-            </Button>
-            <Button variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/5 text-lg px-8">
-              Help Guide
+            </a>
+            <Button onClick={() => navigate('/services')} variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/5 text-lg px-8">
+              Explore Services
             </Button>
           </div>
           
@@ -47,7 +49,7 @@ const HeroSection = () => {
         </div>
         
         <div className="relative flex justify-center items-center">
-          <div className="w-full h-60 md:h-66 lg:h-[30rem] relative animate-float">
+          <div className="w-full h-60 md:h-66 lg:h-[25rem] relative animate-float">
             <div className="absolute inset-0 bg-gradient-to-br from-vibrant-blue/20 to-purple/20 rounded-2xl glow-border overflow-hidden">
               <div className="absolute inset-0 backdrop-blur-sm flex items-center justify-center">
                 <div className="w-20 h-20 rounded-full bg-vibrant-blue/30 flex items-center justify-center cursor-pointer group">

@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center">
           <a href="/" className="flex items-center">
-            <div className="w-12 h-11 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
+            <div className="w-12 h-10 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
               <span className="text-white text-lg font-bold">TSW</span>
             </div>
             <span className="font-montserrat font-bold text-xl text-white">The Startup Wallah</span>
