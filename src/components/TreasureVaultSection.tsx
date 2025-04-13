@@ -2,43 +2,51 @@
 import { useEffect, useRef, useState } from 'react';
 import { Book, DollarSign, FileCheck, Users, Briefcase, Rocket } from 'lucide-react';
 import { Button } from './ui/button';
+import {useNavigate} from 'react-router-dom'
+import { link } from 'fs';
 
 const vaultItems = [
   {
     title: 'Business Playbooks',
     description: 'Step-by-step guides for every business model',
     icon: Book,
-    color: 'from-blue-600 to-purple-600'
+    color: 'from-blue-600 to-purple-600',
+    link: '#'
   },
   {
     title: 'Funding Guidance',
     description: 'Expert advice on raising capital efficiently',
     icon: DollarSign,
-    color: 'from-green-500 to-teal-500'
+    color: 'from-green-500 to-teal-500',
+    link: '#'
   },
   {
     title: 'Startup Checklists',
     description: 'Comprehensive lists to keep you on track',
     icon: FileCheck,
-    color: 'from-orange-500 to-red-500'
+    color: 'from-orange-500 to-red-500',
+    link: '#'
   },
   {
     title: 'Team Building',
     description: 'Strategies for building high-performing teams',
     icon: Users,
-    color: 'from-vibrant-blue  to-pink-800'
+    color: 'from-vibrant-blue  to-pink-800',
+    link: '#'
   },
   {
     title: 'Market Research',
     description: 'Tools to understand your market deeply',
     icon: Briefcase,
-    color: 'from-vibrant-blue to-blue-800'
+    color: 'from-vibrant-blue to-blue-800',
+    link: '#'
   },
   {
-    title: 'Launch Strategies',
+    title: 'Top Business Ideas',
     description: 'Proven tactics for successful product launches',
     icon: Rocket,
-    color: 'from-red-500 to-purple-600'
+    color: 'from-red-500 to-purple-600',
+    link: '/business-ideas'
   }
 ];
 
@@ -81,7 +89,7 @@ const TreasureVaultSection = () => {
       });
     };
   }, []);
-
+  const navigate = useNavigate();
   return (
     <section id="khajna" className="section bg-dark relative ">
       <div className="container mx-auto">
@@ -112,7 +120,7 @@ const TreasureVaultSection = () => {
               <div className="w-full h-1 bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
               <div className="pt-4 flex justify-between items-center">
                 <span className="text-sm font-medium text-white/50">12 Resources</span>
-                <span className="text-vibrant-blue hover:underline text-sm font-medium">Explore</span>
+                <button onClick={() => navigate(item.link)} className="text-vibrant-blue hover:underline text-sm font-medium">Explore</button>
               </div>
             </div>
           ))}
