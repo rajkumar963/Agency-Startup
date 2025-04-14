@@ -136,8 +136,8 @@ export default function BusinessIdeas() {
       {/* Overview Section */}
       <section id="overview" className="mb-16 fade-in opacity-0 translate-y-5 transition-all duration-600">
         <h2 className="text-3xl font-bold mb-8 text-gray-200 text-center">Understanding <span className=" gradient-text">Tier 3 Cities</span></h2>
-        <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-          <p className="mb-4">
+        <div className="bg-gray-800 rounded border border-gray-700 p-6 shadow-custom-heavy">
+        <p className="mb-4">
             Tier 3 cities in India are smaller urban areas with populations typically below 1 million. They offer
             unique business opportunities due to:
           </p>
@@ -154,22 +154,24 @@ export default function BusinessIdeas() {
           </p>
         </div>
 
-        <div className="mt-8 bg-gray-800 rounded-lg p-6 shadow-lg">
-          <h3 className="text-xl font-semibold mb-4">Starting Requirements:</h3>
+        <div className="mt-8 bg-gray-800 rounded p-6 border border-gray-700 shadow-2xl">
+          <h3 className="text-xl font-semibold mb-6 text-white">Starting Requirements:</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="p-4 bg-gray-900 rounded-lg animate-float">
+            <div className="p-6 bg-gray-900 rounded-xl shadow-xl border border-gray-700 hover:shadow-[0_0_12px_2px_rgba(0,150,255,0.4)] transition-all duration-300 animate-float">
               <DollarSign className="text-green-500 w-8 h-8 mb-3" />
-              <h4 className="font-medium mb-2">Initial Investment</h4>
+              <h4 className="text-white font-medium mb-2">Initial Investment</h4>
               <p className="text-gray-400">Most ideas require ₹50,000 to ₹5 lakhs to start, depending on scale.</p>
             </div>
-            <div className="p-4 bg-gray-900 rounded-lg animate-float">
-              <Home className="text-purple-500 w-8 h-8 mb-3" />
-              <h4 className="font-medium mb-2">Space Requirements</h4>
+
+            <div className="p-6 bg-gray-900 rounded-xl shadow-xl border border-gray-700 hover:shadow-[0_0_12px_2px_rgba(0,150,255,0.4)] transition-all duration-300 animate-float">
+              <Home className="text-blue-500 w-8 h-8 mb-3" />
+              <h4 className="text-white font-medium mb-2">Space Requirements</h4>
               <p className="text-gray-400">Many can start from home or with small rented spaces of 100-500 sq. ft.</p>
             </div>
-            <div className="p-4 bg-gray-900 rounded-lg animate-float">
-              <Users className="text-purple-500 w-8 h-8 mb-3" />
-              <h4 className="font-medium mb-2">Team Size</h4>
+
+            <div className="p-6 bg-gray-900 rounded-xl shadow-xl border border-gray-700 hover:shadow-[0_0_12px_2px_rgba(0,150,255,0.4)] transition-all duration-300 animate-float">
+              <Users className="text-purple w-8 h-8 mb-3" />
+              <h4 className="text-white font-medium mb-2">Team Size</h4>
               <p className="text-gray-400">Start with 1-3 people for most ideas; scale as business grows.</p>
             </div>
           </div>
@@ -179,7 +181,7 @@ export default function BusinessIdeas() {
       {/* Food & Beverage */}
       <section id="food" className="mb-16 fade-in opacity-0 translate-y-5 transition-all duration-600">
         <div
-          className="flex items-center cursor-pointer mb-6 animate-glow rounded-lg p-2"
+          className="flex items-center cursor-pointer mb-6 animate-glow rounded border border-gray-800 p-2"
           onClick={() => toggleCategory("foodCategory")}
         >
           <Utensils className="text-yellow-500 w-8 h-8 mr-3" />
@@ -191,7 +193,7 @@ export default function BusinessIdeas() {
         <div
           className={`transition-all duration-500 overflow-hidden ${visibleCategories.foodCategory ? "max-h-[2000px]" : "max-h-0"}`}
         >
-          <div className="mb-4 bg-gray-800 bg-opacity-50 p-4 rounded-lg">
+          <div className="mb-4 bg-gray-800 bg-opacity-50 p-4 rounded border border-gray-700">
             <p>
               Food products offer excellent business potential in Tier 3 cities due to universal demand and strong
               cultural connection to local flavors. Many food businesses can start from a home kitchen with proper
@@ -200,7 +202,7 @@ export default function BusinessIdeas() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Food Item 1 */}
-            <div className="idea-card opacity-0 translate-y-8 bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:scale-105">
+            <div className="idea-card opacity-0 translate-y-2 bg-gray-800 rounded border border-gray-700 overflow-hidden shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_0_12px_2px_rgba(0,150,255,0.4)]">
               <div className="h-1.5 bg-yellow-500"></div>
               <div className="p-6">
                 <div className="flex items-center mb-3">
@@ -249,7 +251,7 @@ export default function BusinessIdeas() {
                   <div>
                     <p className="text-sm text-gray-500 mb-1">Starting Cost</p>
                     <div className="w-full bg-gray-700 rounded-full h-2">
-                      <div className="h-full w-2/5 rounded-full bg-gradient-to-r from-purple-600 to-blue-400 transition-all duration-1000"></div>
+                      <div className="h-full w-2/5 rounded-full bg-gradient-to-r from-purple to-blue-500 transition-all duration-1000"></div>
                     </div>
                     <p className="text-right text-xs text-gray-500 mt-1">₹50,000 - ₹1 lakh</p>
                   </div>
@@ -393,7 +395,7 @@ export default function BusinessIdeas() {
             </div>
           </div>
 
-          <div className="mt-8 p-4 bg-indigo-900 bg-opacity-20 rounded-lg border border-indigo-800">
+          <div className="mt-12 p-4 bg-indigo-900 bg-opacity-20 rounded border border-indigo-800">
             <h4 className="font-semibold mb-2 flex items-center">
               <LightbulbIcon className="text-yellow-500 w-5 h-5 mr-2 animate-pulse" />
               Success Tip
@@ -1241,7 +1243,7 @@ export default function BusinessIdeas() {
       </section>
     </main>
 
-    <style jsx global>{`
+    <style>{`
       .fade-in.active {
         opacity: 1;
         transform: translateY(0);

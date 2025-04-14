@@ -9,7 +9,8 @@ import NotFound from "./pages/NotFound";
 import Auth from "./pages/Auth";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import BusinessIdeas from "./FounderTreasure/BusinessIdeas";
+import BusinessIdeas from "./components/FounderTreasure/BusinessIdeas";
+import ResourcesHub from "./components/resources/ResourcesHub";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/business-ideas" element={<BusinessIdeas />} />
+          <Route path="/resources" element={<ResourcesHub />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
