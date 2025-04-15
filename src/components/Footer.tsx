@@ -3,8 +3,8 @@ import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-16 px-2">
-      <div className="container mx-auto">
+    <footer className="bg-black py-16 ">
+      <div className="container">
         <div className="grid md:grid-cols-4 gap-10">
           <div>
             <div className="flex items-center mb-6">
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
+        <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center mb-[-40px]">
           <p className="text-white/60 mb-4 md:mb-0">© 2025 TheStartupWallah. All rights reserved.</p>
           <div className="flex space-x-6">
             <a href="#" className="text-white/60 hover:text-vibrant-blue transition-colors text-sm">Privacy</a>

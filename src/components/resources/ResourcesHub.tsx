@@ -15,7 +15,7 @@ const resources = [
     isFeatured: true,
     isNew: false,
     isPremium: true,
-    link: "/resources/q&asectionandgovernmentfunding"
+    link: "/resources/qasectionandgovernmentfunding"
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ const ResourceHub = ({ fullPage = false }) => {
   const featuredResource = resources.find((resource) => resource.isFeatured);
 
   return (
-    <section className="section-padding bg-gradient-to-b from-gray-900 to-gray-800 pt-24 px-4 ">
+    <section className="section-padding bg-gradient-to-b from-gray-900 to-gray-900 pt-24 px-4 pb-20 ">
       <div className="text-center mb-10">
         <h2 className="text-3xl font-bold mt-4">
           Startup Learning <span className="gradient-text"> Resources</span> & <span className="gradient-text">Materials</span>
@@ -109,14 +109,14 @@ const ResourceHub = ({ fullPage = false }) => {
         <div className="relative rounded-xl overflow-hidden mb-12">
           <div className="absolute inset-0  bg-black border border-gray-700 z-10"></div>
           <img src={featuredResource.image} alt={featuredResource.title} className="w-full h-80 object-cover" />
-          <div className="absolute inset-0 z-20 p-6 flex flex-col justify-center">
+          <div className="absolute inset-0 z-20 p-5 flex flex-col justify-center">
             <div className="flex justify-between items-center mb-4">
-              <div className="bg-white/20 text-white px-3 py-1 text-sm rounded-full backdrop-blur-sm">
+              <div className="bg-white/20 text-white px-3 py-1 text-sm rounded-full backdrop-blur-sm bg-gradient-to-r from-purple to-vibrant-blue">
                 Featured E-Book
               </div>
               <a
                 href="https://drive.google.com/file/d/1E-Epe-ClPW6djvjbTF6h9OQDm2Gk4k-P/view?usp=sharing"
-                className="inline-flex items-center bg-white text-primary px-5 py-2 rounded-md font-semibold shadow-md"
+                className="inline-flex items-center bg-gradient-to-r from-purple to-vibrant-blue text-white px-4 py-2 rounded-md font-semibold shadow-md"
               >
                 <Download className="w-4 h-4 mr-2" />
                 Download Free
@@ -134,10 +134,10 @@ const ResourceHub = ({ fullPage = false }) => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
+              className={`px-4 py-2 rounded text-sm font-medium transition-all ${
                 activeCategory === category
                   ? "bg-primary text-white"
-                  : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                  : "bg-gray-300 text-gray-900 hover:bg-blue-600 hover:text-gray-100"
               }`}
             >
               {category}
@@ -146,51 +146,64 @@ const ResourceHub = ({ fullPage = false }) => {
         </div>
         <div className="relative">
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-            <Search className="h-5 w-5 text-gray-400" />
+            <Search className="h-5 w-5 text-gray-500" />
           </div>
           <input
             type="text"
             placeholder="Search resources..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="pl-10 pr-4 py-2 border rounded-md w-64 focus:outline-none focus:ring-2 focus:ring-primary/50"
+            className="bg-gray-200 pl-10 pr-4 py-2 border rounded text-zinc-600 w-full focus:outline-none focus:ring-2 focus:ring-primary/50 "
           />
         </div>
       </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filteredResources.map((resource) => (
-          <div key={resource.id} className="rounded-xl overflow-hidden shadow-md bg-white">
-            <div className="relative h-48">
-              <img src={resource.image} alt={resource.title} className="w-full h-full object-cover" />
-              <div className="absolute top-2 left-2 flex gap-2">
-                {resource.isNew && (
-                  <div className="bg-secondary text-white text-xs font-medium px-2 py-1 rounded">NEW</div>
-                )}
-                {resource.isPremium && (
-                  <div className="bg-primary text-white text-xs font-medium px-2 py-1 rounded">PREMIUM</div>
-                )}
-              </div>
-              <div className="absolute bottom-2 left-2">
-                <div className="bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm flex items-center gap-1">
-                  {resource.icon}
-                  {resource.category}
-                </div>
-              </div>
+          <div
+            key={resource.id}
+            className="rounded overflow-hidden shadow-md bg-gray-700 border border-gray-600 transform transition duration-300 hover:shadow-xl hover:scale-105 hover:bg-gray-800 cursor-pointer"
+          >
+      
+      <div className="relative h-48">
+        <img
+          src={resource.image}
+          alt={resource.title}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute top-2 left-2 flex gap-2">
+          {resource.isNew && (
+            <div className="bg-secondary text-white text-xs font-medium px-2 py-1 rounded">
+              NEW
             </div>
-            <div className="p-5">
-              <h3 className="text-lg font-bold mb-1">{resource.title}</h3>
-              <p className="text-gray-600 text-sm mb-4">{resource.description}</p>
-              <button
-                onClick={() => navigate(resource.link)}
-                className="text-primary font-medium hover:underline"
-              >
-                Learn More
-              </button>
+          )}
+          {resource.isPremium && (
+            <div className="bg-primary text-white text-xs font-medium px-2 py-1 rounded">
+              PREMIUM
             </div>
+          )}
+        </div>
+        <div className="absolute bottom-2 left-2">
+          <div className="bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm flex items-center gap-1">
+            {resource.icon}
+            {resource.category}
           </div>
-        ))}
+        </div>
       </div>
+      <div className="p-5">
+        <h3 className="text-lg font-bold mb-1">{resource.title}</h3>
+        <p className="text-gray-300 text-sm mb-4">{resource.description}</p>
+        <button
+          onClick={() => navigate(resource.link)}
+          className="text-primary font-medium hover:underline"
+        >
+          Learn More
+        </button>
+      </div>
+    </div>
+    ))}
+  </div>
+
     </section>
   );
 };

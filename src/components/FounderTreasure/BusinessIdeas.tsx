@@ -95,7 +95,7 @@ export default function BusinessIdeas() {
     </header>
 
     {/* Navigation Menu */}
-    <nav className="sticky top-0 bg-gray-900 py-4 px-4 z-50 shadow-lg mb-8 fade-in opacity-0 translate-y-5 transition-all duration-600">
+    <nav className=" bg-gray-900 py-4 px-4 shadow-lg mb-8 fade-in opacity-0 translate-y-5 transition-all duration-600">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 text-sm">
           <a href="#overview" className="px-3 py-2 rounded-full bg-gray-800 hover:bg-blue-700  transition-all">
