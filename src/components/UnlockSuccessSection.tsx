@@ -1,7 +1,9 @@
 import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const UnlockSuccessSection = () => {
+  const navigate = useNavigate();
   return (
     <section id="resources" className="section bg-dark relative px-3 ml-6">
       <div className="absolute  inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDM0djZoLTZWMzRoLTZ2LTZoNnYtNmg2djZoNnY2aC02eiIvPjwvZz48L2c+PC9zdmc+')] opacity-20 bg-contain"></div>
@@ -34,7 +36,7 @@ const UnlockSuccessSection = () => {
               </ul>
 
               <div className="flex justify-center lg:justify-start">
-                <Button className="mt-4 bg-gradient-purple-blue hover:opacity-90 transition-opacity">
+                <Button onClick={() => navigate('/resources')} className="mt-4 bg-gradient-purple-blue hover:opacity-90 transition-opacity">
                   Elevate with Resources <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>

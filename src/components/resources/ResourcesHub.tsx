@@ -184,7 +184,7 @@ const ResourceHub = ({ fullPage = false }) => {
           )}
         </div>
         <div className="absolute bottom-2 left-2">
-          <div className="bg-white/20 text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm flex items-center gap-1">
+          <div className="bg-gradient-to-r from-purple to-vibrant-blue text-white text-xs font-medium px-3 py-1 rounded-full backdrop-blur-sm flex items-center gap-1">
             {resource.icon}
             {resource.category}
           </div>

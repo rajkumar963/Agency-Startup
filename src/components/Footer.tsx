@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-vibrant-blue/20 transition-colors">
                 <Instagram size={16} className="text-white" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-vibrant-blue/20 transition-colors">
+              <a href="https://www.linkedin.com/company/the-startup-wallah/posts/?feedView=all" className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-vibrant-blue/20 transition-colors">
                 <Linkedin size={16} className="text-white" />
               </a>
             </div>

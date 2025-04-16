@@ -37,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'py-3 bg-dark/90 backdrop-blur-md shadow-lg' : 'py-6 bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300  ${isScrolled ? 'py-3 bg-dark/90 backdrop-blur-md shadow-lg' : 'py-6 bg-transparent'}`}>
       <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-8">
           <a href="#services" className="text-white/80 hover:text-vibrant-blue transition-colors">Services</a>
           <Link to="/resources" className="text-white/80 hover:text-vibrant-blue transition-colors">Resources</Link>
-          <a href="#khajna" className="text-white/80 hover:text-vibrant-blue transition-colors">Khajna</a>
+          <Link to="/khajna" className="text-white/80 hover:text-vibrant-blue transition-colors">Khajna</Link>
           <Link to="/auth">
             <Button className="bg-gradient-purple-blue hover:opacity-90 transition-opacity">
               Get Started
