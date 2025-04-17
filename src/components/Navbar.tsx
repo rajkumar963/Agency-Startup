@@ -89,7 +89,7 @@ const Navbar = () => {
               Resources
             </button>
             <button
-              onClick={() => handleMobileNavClick('#khajna')}
+              onClick={() => handleMobileNavClick('/khajna')}
               className="text-left text-white/80 hover:text-vibrant-blue transition-colors py-2"
             >
               Khajna

@@ -21,14 +21,14 @@ const vaultItems = [
     link: '#'
   },
   {
-    title: 'Startup Checklists',
+    title: 'FMCG Startup Ideas',
     description: 'Comprehensive lists to keep you on track',
     icon: FileCheck,
     color: 'from-orange-500 to-red-500',
-    link: '#'
+    link: '/khajna'
   },
   {
-    title: 'Team Building',
+    title: 'Investors Data',
     description: 'Strategies for building high-performing teams',
     icon: Users,
     color: 'from-vibrant-blue  to-pink-800',
