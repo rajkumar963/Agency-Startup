@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-8">
           <a href="#services" className="text-white/80 hover:text-vibrant-blue transition-colors">Services</a>
           <Link to="/resources" className="text-white/80 hover:text-vibrant-blue transition-colors">Resources</Link>
-          <Link to="/khajna" className="text-white/80 hover:text-vibrant-blue transition-colors">Khajna</Link>
+          <Link to="/allkhajna" className="text-white/80 hover:text-vibrant-blue transition-colors">Khajna</Link>
           <Link to="/auth">
             <Button className="bg-gradient-purple-blue hover:opacity-90 transition-opacity">
               Get Started
@@ -89,7 +89,7 @@ const Navbar = () => {
               Resources
             </button>
             <button
-              onClick={() => handleMobileNavClick('/khajna')}
+              onClick={() => handleMobileNavClick('/allkhajna')}
               className="text-left text-white/80 hover:text-vibrant-blue transition-colors py-2"
             >
               Khajna

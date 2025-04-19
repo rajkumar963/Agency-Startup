@@ -1,7 +1,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Book, DollarSign, FileCheck, Users, Briefcase, Rocket } from 'lucide-react';
-import { Button } from './ui/button';
+import { Button } from '../ui/button';
 import {useNavigate} from 'react-router-dom'
 import { link } from 'fs';
 
@@ -50,7 +50,7 @@ const vaultItems = [
   }
 ];
 
-const TreasureVaultSection = () => {
+const AllKhajna = () => {
   const [isVisible, setIsVisible] = useState(Array(vaultItems.length).fill(false));
   const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -91,7 +91,7 @@ const TreasureVaultSection = () => {
   }, []);
   const navigate = useNavigate();
   return (
-    <section id="khajna" className="section bg-dark relative ">
+    <section id="khajna" className="section bg-dark relative  mt-5 mx-[-1rem] ">
       <div className="container mx-auto">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-2xl md:text-4xl font-bold mb-6">
@@ -136,4 +136,4 @@ const TreasureVaultSection = () => {
   );
 };
 
-export default TreasureVaultSection;
+export default AllKhajna;

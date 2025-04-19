@@ -17,6 +17,8 @@ import EntrepreneurshipEbook from "./pages/EBookSection/EntrepreneurshipEbook";
 import CaseStudiesResearch from "./pages/EBookSection/CaseStudiesResearch";
 import QASection from "./pages/EBookSection/QASection";
 import KhajnaSection from "./components/khajna/KhajnaSection";
+import AllKhajna from "./components/khajna/AllKhajna";
+import InvestorVault from "./components/khajna/InvestorVault";
 
 const queryClient = new QueryClient();
 
@@ -38,6 +40,8 @@ const App = () => (
           <Route path="/resources/casestudiesresearch" element={<CaseStudiesResearch />} />
           <Route path="/resources/qasectionandgovernmentfunding" element={<QASection />} />
           <Route path="/khajna" element={<KhajnaSection />} />
+          <Route path="/allkhajna" element={<AllKhajna />} />
+          <Route path="/investorsvault" element={<InvestorVault/>}/>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
