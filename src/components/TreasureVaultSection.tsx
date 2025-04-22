@@ -28,7 +28,7 @@ const vaultItems = [
     link: '/khajna'
   },
   {
-    title: 'Investors Data',
+    title: 'Investors Vault',
     description: 'Strategies for building high-performing teams',
     icon: Users,
     color: 'from-vibrant-blue  to-pink-800',

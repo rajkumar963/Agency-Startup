@@ -94,7 +94,7 @@ export default function InvestorVault() {
   }
 
   return (
-    <div className="font-sans text-gray-100 bg-[#0c0c0c] overflow-x-hidden">
+    <div className="font-sans text-gray-100 bg-[#0c0c0c] overflow-x-hidden mt-20">
       {/* Custom styles */}
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -248,59 +248,39 @@ export default function InvestorVault() {
         }
       `}</style>
 
-      {/* Navbar */}
-      <nav className="py-4 px-6 flex justify-between items-center border-b border-gray-800">
-        <div className="text-2xl font-bold text-white flex items-center">
-          <span className="text-blue-400 mr-2">
-            <Lock className="inline" />
-          </span>
-          <span>Investor Vault</span>
-        </div>
-        <div className="hidden md:flex items-center space-x-6">
-          <Link to="#features" className="text-gray-300 hover:text-blue-400 transition-colors">
-            Features
-          </Link>
-          <Link to="#inside" className="text-gray-300 hover:text-blue-400 transition-colors">
-            What's Inside
-          </Link>
-          <Link to="#faq" className="text-gray-300 hover:text-blue-400 transition-colors">
-            FAQ
-          </Link>
-          <Link to="#legal" className="text-gray-300 hover:text-blue-400 transition-colors">
-            Legal
-          </Link>
-        </div>
-        <button className="btn-primary pulse">Unlock the Vault</button>
-      </nav>
+      
 
       {/* Hero Section */}
-      <section className="py-20 px-6 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="md:w-1/2 mb-10 md:mb-0">
-              <h1 className="text-5xl font-bold mb-6 slide-in-left" style={{ animationDelay: "0.3s" }}>
-                <span className="text-white">Investor</span>
-                <span className="text-blue-400 glow"> Vault</span>
+      <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20">
+            {/* Left Content */}
+            <div className="w-full lg:w-1/2 text-center lg:text-left">
+              <h1 className="text-4xl sm:text-5xl font-bold mb-6 slide-in-left" style={{ animationDelay: "0.3s" }}>
+                <span className="text-white">Investor</span>&nbsp;
+                <span className="gradient-text">Vault</span>
               </h1>
-              <p className="text-xl mb-8 text-gray-300 typewriter" style={{ animationDelay: "0.6s" }}>
+              <p className="text-lg sm:text-xl mb-6 text-gray-300 typewriter" style={{ animationDelay: "0.6s" }}>
                 You don't need connections. You need the right direction.
               </p>
-              <p className="text-gray-400 mb-8 fadeIn" style={{ animationDelay: "0.9s" }}>
+              <p className="text-base sm:text-lg text-gray-400 mb-6 fadeIn" style={{ animationDelay: "0.9s" }}>
                 Access ethically sourced, comprehensive investor information to fuel your fundraising strategy.
               </p>
               <button className="btn-primary fadeIn" style={{ animationDelay: "1.2s" }}>
                 Unlock the Vault
               </button>
             </div>
-            <div className="md:w-1/2 relative">
-              <div className="bg-blue-900 bg-opacity-20 rounded-xl p-8 border border-blue-800 floating">
-                <div className="text-center mb-6">
+
+            {/* Right Card */}
+            <div className="w-full lg:w-1/2">
+              <div className="bg-blue-900 bg-opacity-20 rounded-xl p-6 sm:p-8 border border-blue-800 floating">
+                <div className="text-center mb-4 sm:mb-6">
                   <span className="text-blue-400 text-4xl">
                     <Shield className="inline-block w-10 h-10 mx-auto" />
                   </span>
-                  <h3 className="text-xl font-semibold mt-2">Ethically Sourced Information</h3>
+                  <h3 className="text-lg sm:text-xl font-semibold mt-2">Ethically Sourced Information</h3>
                 </div>
-                <p className="text-gray-300 mb-4">
+                <p className="text-gray-300 text-sm sm:text-base mb-4">
                   Our investor information is compiled from public sources, with strict adherence to privacy laws and
                   ethical standards.
                 </p>
@@ -311,9 +291,11 @@ export default function InvestorVault() {
             </div>
           </div>
         </div>
+
         {/* Animated particles in the background */}
         <div ref={particlesContainerRef} className="absolute top-0 left-0 w-full h-full z-0"></div>
       </section>
+
 
       {/* Features Section */}
       <section id="features" className="py-16 px-6 bg-gradient">
@@ -563,8 +545,8 @@ export default function InvestorVault() {
       <section id="faq" className="py-16 px-6 bg-gradient">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">
-            <span className="text-white">Frequently Asked</span>
-            <span className="text-blue-400"> Questions</span>
+            <span className="text-white">Frequently Asked</span>&nbsp;
+            <span className="gradient-text"> Questions</span>
           </h2>
 
           <div className="space-y-4">
@@ -627,8 +609,8 @@ export default function InvestorVault() {
       <section id="legal" className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-8 text-center">
-            <span className="text-white">Legal</span>
-            <span className="text-blue-400"> Information</span>
+            <span className="text-white">Legal</span>&nbsp;
+            <span className="gradient-text"> Information</span>
           </h2>
 
           <div className="bg-black bg-opacity-30 border border-gray-800 rounded-lg p-8 fadeIn">
@@ -709,7 +691,7 @@ export default function InvestorVault() {
       {/* Final CTA Section */}
       <section className="py-16 px-6 bg-gradient">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6 glow">Ready to Connect with the Right Investors?</h2>
+          <h2 className="text-4xl font-bold mb-4">Ready to Connect with the <span className="gradient-text">Right Investors?</span></h2>
           <p className="text-xl text-gray-300 mb-8">
             Stop wasting time on research. Start having meaningful conversations with investors who are actively looking
             for startups like yours.
