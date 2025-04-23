@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import UnlockSuccessSection from "@/components/UnlockSuccessSection";
 import TreasureVaultSection from "@/components/TreasureVaultSection";
 import BusinessFlowchart from "@/components/BusinessFlowchart";
+import HomePage from "@/components/adSection/AdSection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <UnlockSuccessSection />
       <TreasureVaultSection />
       <BusinessFlowchart />
+      <HomePage/>
     </div>
   );
 };

@@ -270,9 +270,7 @@ export default function InvestorVault() {
               <p className="text-base sm:text-lg text-gray-400 mb-6 fadeIn" style={{ animationDelay: "0.9s" }}>
                 Access ethically sourced, comprehensive investor information to fuel your fundraising strategy.
               </p>
-              <Button onClick={() => navigate('/investorsdata')} className="bg-gradient-purple-blue hover:opacity-90 transition-opacity" style={{ animationDelay: "1.2s" }}>
-                Unlock the Vault
-              </Button>
+              <Button onClick={() => navigate('/investorsdata')}  className="bg-gradient-purple-blue hover:opacity-90 transition-opacity">Unlock the Vault Now</Button>
             </div>
 
             {/* Right Card */}
