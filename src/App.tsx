@@ -19,6 +19,7 @@ import QASection from "./pages/EBookSection/QASection";
 import KhajnaSection from "./components/khajna/KhajnaSection";
 import AllKhajna from "./components/khajna/AllKhajna";
 import InvestorVault from "./components/khajna/InvestorVault";
+import InvestorsDtata from "./components/khajna/InvestorsData";
 
 const queryClient = new QueryClient();
 
@@ -42,6 +43,7 @@ const App = () => (
           <Route path="/khajna" element={<KhajnaSection />} />
           <Route path="/allkhajna" element={<AllKhajna />} />
           <Route path="/investorsvault" element={<InvestorVault/>}/>
+          <Route path="/investorsdata" element={<InvestorsDtata />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

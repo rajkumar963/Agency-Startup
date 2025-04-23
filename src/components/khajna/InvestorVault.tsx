@@ -1,6 +1,7 @@
 
 import { useEffect, useRef, useState } from "react"
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
+import { Button } from '../ui/button';
 import {
   Calendar,
   ChevronDown,
@@ -93,6 +94,8 @@ export default function InvestorVault() {
     setActiveFaq(activeFaq === index ? null : index)
   }
 
+  const navigate=useNavigate()
+
   return (
     <div className="font-sans text-gray-100 bg-[#0c0c0c] overflow-x-hidden mt-20">
       {/* Custom styles */}
@@ -116,12 +119,13 @@ export default function InvestorVault() {
           border-radius: 8px;
           overflow: hidden;
           transition: transform 0.3s ease, box-shadow 0.3s ease;
-          border: 1px solid rgba(255,255,255,0.1);
+          border: 1px solid rgba(255,255,255,0.1); 
         }
         
         .card:hover {
           transform: translateY(-5px);
-          box-shadow: 0 10px 25px rgba(0,170,255,0.2);
+          box-shadow: 0 10px 25px rgba(0, 149, 255, 0.39);
+          border: 1px solid rgba(4, 78, 96, 0.44);
         }
         
         .btn-primary {
@@ -252,7 +256,7 @@ export default function InvestorVault() {
 
       {/* Hero Section */}
       <section className="relative py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-10 lg:gap-20">
             {/* Left Content */}
             <div className="w-full lg:w-1/2 text-center lg:text-left">
@@ -266,9 +270,9 @@ export default function InvestorVault() {
               <p className="text-base sm:text-lg text-gray-400 mb-6 fadeIn" style={{ animationDelay: "0.9s" }}>
                 Access ethically sourced, comprehensive investor information to fuel your fundraising strategy.
               </p>
-              <button className="btn-primary fadeIn" style={{ animationDelay: "1.2s" }}>
+              <Button onClick={() => navigate('/investorsdata')} className="bg-gradient-purple-blue hover:opacity-90 transition-opacity" style={{ animationDelay: "1.2s" }}>
                 Unlock the Vault
-              </button>
+              </Button>
             </div>
 
             {/* Right Card */}
@@ -301,11 +305,11 @@ export default function InvestorVault() {
       <section id="features" className="py-16 px-6 bg-gradient">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center">
-            <span className="text-white">Key</span>
-            <span className="text-blue-400"> Features</span>
+            <span className="text-white">Key</span>&nbsp;
+            <span className="gradient-text"> Features</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="card p-6 fadeIn" style={{ animationDelay: "0.3s" }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+            <div className="card p-6 fadeIn " style={{ animationDelay: "0.3s" }}>
               <div className="text-blue-400 mb-4">
                 <Mail className="w-8 h-8" />
               </div>
@@ -352,7 +356,7 @@ export default function InvestorVault() {
       {/* What's Inside the Vault Section */}
       <section id="inside" className="py-16 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 text-center fadeIn">What's Inside the Vault?</h2>
+          <h2 className="text-4xl font-bold mb-12 text-center fadeIn">What's Inside <span className="gradient-text">The Vault?</span></h2>
           <p className="text-center text-gray-300 mb-12 max-w-3xl mx-auto fadeIn" style={{ animationDelay: "0.3s" }}>
             Our carefully curated investor information resource provides you with everything you need to connect with
             the right investors for your startup.
@@ -535,7 +539,7 @@ export default function InvestorVault() {
           </div>
 
           <div className="text-center">
-            <button className="btn-primary pulse">Unlock the Vault Now</button>
+            <Button onClick={() => navigate('/investorsdata')}  className="bg-gradient-purple-blue hover:opacity-90 transition-opacity">Unlock the Vault Now</Button>
             <p className="mt-4 text-gray-500 text-sm">Over 10,000+ ethically sourced investor profiles</p>
           </div>
         </div>
@@ -697,9 +701,9 @@ export default function InvestorVault() {
             for startups like yours.
           </p>
           <div className="mb-10">
-            <button className="btn-primary text-xl px-10 py-4 pulse">
+            <Button onClick={() => navigate('/investorsdata')}  className="bg-gradient-purple-blue hover:opacity-90 transition-opacity">
               <LockOpen className="inline-block mr-2 w-5 h-5" /> Unlock the Vault Now
-            </button>
+            </Button>
           </div>
           <p className="text-gray-500">Join over 1,000+ founders who have successfully raised with Investor Vault</p>
         </div>

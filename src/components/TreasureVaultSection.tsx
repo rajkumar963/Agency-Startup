@@ -7,11 +7,11 @@ import { link } from 'fs';
 
 const vaultItems = [
   {
-    title: 'Business Playbooks',
+    title: 'AI Startup Ideas',
     description: 'Step-by-step guides for every business model',
     icon: Book,
     color: 'from-blue-600 to-purple-600',
-    link: '#'
+    link: '/ai-startup-ideas'
   },
   {
     title: 'Funding Guidance',
