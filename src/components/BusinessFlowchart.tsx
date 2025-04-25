@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
 const flowSteps = [
-  { id: 1, title: 'Business Idea', description: 'Validate your idea with our market fit framework', link: '#' },
+  { id: 1, title: 'Business Idea', description: 'Validate your idea with our market fit framework', link: '/businessesideas' },
   { id: 2, title: 'Team Building', description: 'Find co-founders and build your initial team', link: '#' },
   { id: 3, title: 'MVP Development', description: 'Create your minimum viable product efficiently', link: '#' },
   { id: 4, title: 'Finance Template', description: 'Track cash flow and manage startup finances', link: '#' },
