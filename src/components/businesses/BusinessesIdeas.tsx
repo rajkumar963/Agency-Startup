@@ -1,5 +1,4 @@
-"use client"
-
+import React from "react"
 import { useEffect, useRef, useState } from "react"
 import {
   Bolt,
@@ -79,39 +78,39 @@ export default function BusinessesIdeas() {
     ],
   }
 
-  const chartOptions = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "bottom" as const,
-        labels: {
-          color: "#a5b4fc",
-          font: {
-            size: 13,
-            family: "Roboto, sans-serif",
-          },
-        },
-      },
-      title: {
-        display: true,
-        text: "How Founders Spark New Ideas",
-        color: "#5eead4",
-        font: {
-          size: 15,
-          weight: "bold",
-          family: "Roboto, sans-serif",
-        },
-        padding: {
-          top: 16,
-          bottom: 10,
-        },
-      },
-      tooltip: {
-        enabled: true,
-      },
-    },
-    cutout: "45%",
-  }
+  // const chartOptions = {
+  //   responsive: true,
+  //   plugins: {
+  //     legend: {
+  //       position: "bottom" as const,
+  //       labels: {
+  //         color: "#a5b4fc",
+  //         font: {
+  //           size: 13,
+  //           family: "Roboto, sans-serif",
+  //         },
+  //       },
+  //     },
+  //     title: {
+  //       display: true,
+  //       text: "How Founders Spark New Ideas",
+  //       color: "#5eead4",
+  //       font: {
+  //         size: 15,
+  //         weight: "bold",
+  //         family: "Roboto, sans-serif",
+  //       },
+  //       padding: {
+  //         top: 16,
+  //         bottom: 10,
+  //       },
+  //     },
+  //     tooltip: {
+  //       enabled: true,
+  //     },
+  //   },
+  //   cutout: "45%",
+  // }
 
   return (
     <div className="bg-gray-900 overflow-x-hidden text-gray-100 font-sans mt-16" style={{ scrollBehavior: "smooth" }}>
@@ -155,7 +154,7 @@ export default function BusinessesIdeas() {
 
       {/* Chart Section */}
       <div className="max-w-[330px] h-[230px] mx-auto my-8 bg-[rgba(25,45,75,0.78)] rounded-3xl shadow-xl p-4">
-        <Doughnut data={chartData} options={chartOptions} />
+        <Doughnut data={chartData} />
       </div>
 
       {/* WHAT ARE AI TOOLS FOR BUSINESS */}
