@@ -7,7 +7,7 @@ import { link } from 'fs';
 
 const vaultItems = [
   {
-    title: 'AI Startup Ideas',
+    title: '140+ AI Business Ideas',
     description: 'Step-by-step guides for every business model',
     icon: Book,
     color: 'from-blue-600 to-purple-600',
@@ -21,14 +21,14 @@ const vaultItems = [
     link: '#'
   },
   {
-    title: 'FMCG Startup Ideas',
+    title: '140+ FMCG Business Ideas',
     description: 'Comprehensive lists to keep you on track',
     icon: FileCheck,
     color: 'from-orange-500 to-red-500',
     link: '/khajna'
   },
   {
-    title: 'Investors Vault',
+    title: 'Investor Database',
     description: 'Strategies for building high-performing teams',
     icon: Users,
     color: 'from-vibrant-blue  to-pink-800',
@@ -98,8 +98,8 @@ const TreasureVaultSection = () => {
           The Founder's <span className="gradient-text">Treasure Vault</span>
           </h2>
           <p className="text-lg text-white/70 ">
-            A curated collection of essential resources. Legal documents, pitch decks, investor directories, and growth frameworks—all meticulously organized by startup stage and challenge.         
-         </p>
+             Unlock a curated collection of essential startup resources—all for just ₹299 (originally ₹19,999):
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

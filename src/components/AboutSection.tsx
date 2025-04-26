@@ -4,21 +4,21 @@ const aboutItems = [
   {
     title: "Our Story",
     description:
-      "The Startup Wallah emerged from founders’ shared struggles—battling confusing legalities, chaotic plans, and endless uncertainty. After sleepless nights and countless failures, they created a space to make launching a startup less isolating and more achievable.",
+      "F2XO emerged from founders’ shared struggles—battling confusing legalities, chaotic plans, and endless uncertainty. After sleepless nights and countless failures, they created a space to make launching a startup less isolating and more achievable.",
     icon: BookOpen,
     color: "from-vibrant-blue to-purple"
   },
   {
     title: "Our Vision",
     description:
-      "To create a world where every entrepreneur, regardless of background, has the opportunity to build and grow a successful startup, fueled by an inclusive ecosystem of resources, connections, and collaboration.",
+      "To create a world where every entrepreneur, regardless of background, has the opportunity to build and grow a successful startup, fueled by an inclusive ecosystem of resources, khajana, services, connection, and collaboration.",
     icon: Eye,
     color: "from-purple to-vibrant-blue"
   },
   {
     title: "Our Mission",
     description:
-      "Empower entrepreneurs with accessible tools, expert resources, and a network linking founders to investors and peers, breaking barriers so all startups can thrive.",
+      "Empower entrepreneurs with accessible khajana they require to build successful businesses/startups—expert services, resources, and a network linking founders to founders /entrepreneur and peers. Founders, entrepreneurs: breaking barriers so all founders and startups can thrive and be successful.",
     icon: Target,
     color: "from-vibrant-blue to-teal"
   }

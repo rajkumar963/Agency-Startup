@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
 const flowSteps = [
-  { id: 1, title: 'Business Idea', description: 'Validate your idea with our market fit framework', link:'/businessesideas'},
-  { id: 2, title: 'Team Building', description: 'Find co-founders and build your initial team', link: '#' },
-  { id: 3, title: 'MVP Development', description: 'Create your minimum viable product efficiently', link: '#' },
-  { id: 4, title: 'Finance Template', description: 'Track cash flow and manage startup finances', link: '#' },
-  { id: 5, title: 'Market Launch', description: 'Strategies for a successful product launch', link: '#' },
-  { id: 6, title: 'Growth Hacking', description: 'Scale your business with proven tactics', link: '#' },
-  { id: 7, title: 'Exit Strategy', description: 'Define your exit strategy and secure funding', link: '#' },
-  { id: 8, title: 'Market Launch', description: 'Strategies for a successful product launch', link: '#' },
-  { id: 9, title: 'Growth Hacking', description: 'Scale your business with proven tactics', link: '#' },
-  { id: 10, title: 'Exit Strategy', description: 'Define your exit strategy and secure funding', link: '#' },
+  { id: 1, title: 'Find Problem', description: 'Validate your idea with our market fit framework', link:'/businessesideas'},
+  { id: 2, title: 'Test Idea', description: 'Find co-founders and build your initial team', link: '#' },
+  { id: 3, title: 'Pick Model', description: 'Create your minimum viable product efficiently', link: '#' },
+  { id: 4, title: 'Build Team', description: 'Track cash flow and manage startup finances', link: '#' },
+  { id: 5, title: 'Make Plan', description: 'Strategies for a successful product launch', link: '#' },
+  { id: 6, title: 'Get Cash', description: 'Scale your business with proven tactics', link: '#' },
+  { id: 7, title: 'Build Product', description: 'Define your exit strategy and secure funding', link: '#' },
+  { id: 8, title: 'Find Customers', description: 'Strategies for a successful product launch', link: '#' },
+  { id: 9, title: 'Grow Right', description: 'Scale your business with proven tactics', link: '#' },
+  { id: 10, title: 'Stay Flexible', description: 'Define your exit strategy and secure funding', link: '#' },
 ];
 
 const cardVariants = {

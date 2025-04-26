@@ -14,7 +14,7 @@ const UnlockSuccessSection = () => {
           <div className="order-2 lg:order-1">
             <div className="space-y-6 text-center lg:text-left">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug sm:leading-tight">
-                Unlock the <span className="gradient-text">Secret</span> to Your <span className="gradient-text">Success</span>
+              Unlock Proven <span className="gradient-text">Strategies</span>&<span className="gradient-text">Resources</span>
               </h2>
 
               <p className="text-base sm:text-lg text-white/80">
@@ -23,10 +23,10 @@ const UnlockSuccessSection = () => {
 
               <ul className="space-y-3 text-left">
                 {[
-                  'Curated resources for every stage of your journey',
-                  'Expert-validated strategies and frameworks',
-                  'Templates that save you hundreds of hours',
-                  'Community insights from fellow founders'
+                  'Handpicked books for founders',
+                  'Sales and marketing tactics from experts',
+                  'Actionable entrepreneurship insights',
+                  'Strategic tips to scale your business'
                 ].map((item, i) => (
                   <li key={i} className="flex items-start">
                     <div className="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-gradient-purple-blue flex-shrink-0 mt-1"></div>

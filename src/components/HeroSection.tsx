@@ -27,8 +27,7 @@ const HeroSection = () => {
           </div>
           
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
-            We simplify startup chaos with smart tools, expert help, and a community that’s got your back—so you can build with clarity and grow faster.
-          </p> 
+          We simplify startup chaos with premium, affordable services, expert resources, and the world's most demanding and important khajana for founders—so you can build with clarity and grow faster.          </p> 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
             <a href="https://wa.me/message/DB45B2CA3YBTE1" className=" bg-gradient-purple-blue hover:opacity-90 transition-opacity text-lg px-5 flex items-center justify-center gap-2 py-2">
               Join the Community
@@ -44,7 +43,7 @@ const HeroSection = () => {
                 <div key={i} className="w-10 h-10 rounded-full border-2 border-dark bg-gradient-to-br from-gray-700 to-gray-900"></div>
               ))}
             </div>
-            <p className="text-sm text-white/70">Join <span className="text-white font-semibold">1,200+</span> founders already onboard</p>
+            <p className="text-sm text-white/70">Join <span className="text-white font-semibold">50+</span> founders already onboard</p>
           </div>
         </div>
         
