@@ -14,7 +14,7 @@ const UnlockSuccessSection = () => {
           <div className="order-2 lg:order-1">
             <div className="space-y-6 text-center lg:text-left">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug sm:leading-tight">
-              Unlock Proven <span className="gradient-text">Strategies</span>&<span className="gradient-text">Resources</span>
+              Unlock Proven <span className="gradient-text">Strategies</span> & <span className="gradient-text">Resources</span>
               </h2>
 
               <p className="text-base sm:text-lg text-white/80">

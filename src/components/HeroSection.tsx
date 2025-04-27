@@ -1,7 +1,7 @@
 
 import { ArrowRight } from 'lucide-react';
 import { Button } from './ui/button';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 const HeroSection = () => {
@@ -29,9 +29,9 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-white/80 leading-relaxed">
           We simplify startup chaos with premium, affordable services, expert resources, and the world's most demanding and important khajana for founders—so you can build with clarity and grow faster.          </p> 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <a href="https://wa.me/message/DB45B2CA3YBTE1" className=" bg-gradient-purple-blue hover:opacity-90 transition-opacity text-lg px-5 flex items-center justify-center gap-2 py-2">
-              Join the Community
-            </a>
+            <Link to="/allkhajna" className=" bg-gradient-purple-blue hover:opacity-90 transition-opacity text-lg px-5 flex items-center justify-center gap-2 py-2">
+              Explore Khazana
+            </Link>
             <Button onClick={() => navigate('/services')} variant="outline" size="lg" className="border-white/20 text-white hover:bg-white/5 text-lg px-8">
               Explore Services
             </Button>

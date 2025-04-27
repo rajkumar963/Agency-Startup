@@ -11,7 +11,7 @@ const Footer = () => {
               <div className="w-12 h-10 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
                 <span className="text-white text-lg font-bold">TSW</span>
               </div>
-              <span className="font-montserrat font-bold text-xl text-white">The Startup Wallah</span>
+              <span className="font-montserrat font-bold text-xl text-white">F2X0</span>
             </div>
             <p className="text-white/60 mb-6">
               Empowering founders with the tools and resources to build exceptional startups.
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
         
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center mb-[-40px]">
-          <p className="text-white/60 mb-4 md:mb-0">© 2025 TheStartupWallah. All rights reserved.</p>
+          <p className="text-white/60 mb-4 md:mb-0">© 2025 F2X0. All rights reserved.</p>
           <div className="flex space-x-6">
             <a href="#" className="text-white/60 hover:text-vibrant-blue transition-colors text-sm">Privacy</a>
             <a href="#" className="text-white/60 hover:text-vibrant-blue transition-colors text-sm">Terms</a>
