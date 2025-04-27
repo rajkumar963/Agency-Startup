@@ -4,7 +4,7 @@ import { ExternalLink } from 'lucide-react';
 
 const flowSteps = [
   { id: 1, title: 'Find Problem', description: 'Validate your idea with our market fit framework', link:'/businessesideas'},
-  { id: 2, title: 'Test Idea', description: 'Find co-founders and build your initial team', link: '#' },
+  { id: 2, title: 'Test Idea', description: 'Find co-founders and build your initial team', link: '/mvpblueprint' },
   { id: 3, title: 'Pick Model', description: 'Create your minimum viable product efficiently', link: '/pickmodels' },
   { id: 4, title: 'Build Team', description: 'Track cash flow and manage startup finances', link: '#' },
   { id: 5, title: 'Make Plan', description: 'Strategies for a successful product launch', link: '#' },

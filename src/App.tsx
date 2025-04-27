@@ -22,6 +22,7 @@ import InvestorVault from "./components/khajna/InvestorVault";
 import InvestorsDtata from "./components/khajna/InvestorsData";
 import BusinessesIdeas from "./components/businesses/BusinessesIdeas";
 import PickModels from "./components/businesses/PickModels";
+import MVPBlueprint from "./components/businesses/MVPBluePrint";
 
 const queryClient = new QueryClient();
 
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/investorsdata" element={<InvestorsDtata />} />
           <Route path="/businessesideas" element={<BusinessesIdeas/>}/>
           <Route path="/pickmodels" element={<PickModels />} />
+          <Route path="/mvpblueprint" element={<MVPBlueprint />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
