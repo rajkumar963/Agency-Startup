@@ -47,6 +47,27 @@ const vaultItems = [
     icon: Rocket,
     color: 'from-red-500 to-purple-600',
     link: '/business-ideas'
+  },
+  {
+    title: 'Investors Vault',
+    description: 'Strategies for building high-performing teams',
+    icon: Users,
+    color: 'from-vibrant-blue  to-pink-800',
+    link: '/investorsvault'
+  },
+  {
+    title: 'Market Research',
+    description: 'Tools to understand your market deeply',
+    icon: Briefcase,
+    color: 'from-vibrant-blue to-blue-800',
+    link: '#'
+  },
+  {
+    title: 'Top Business Ideas',
+    description: 'Proven tactics for successful product launches',
+    icon: Rocket,
+    color: 'from-red-500 to-purple-600',
+    link: '/business-ideas'
   }
 ];
 
