@@ -1,3 +1,4 @@
+import { a } from "node_modules/framer-motion/dist/types.d-B50aGbjN";
 import React, { useEffect, useState } from "react";
 
 interface Ad {
@@ -46,23 +47,25 @@ const AdSection: React.FC = () => {
   const currentAd = ads[currentIndex];
 
   return (
-    <div className="max-w-3xl mx-auto bg-gray-700 shadow-lg rounded overflow-hidden p-4 border border-gray-200 transition-all duration-700 m-10 h-[80%]">
-      <img
-        src={currentAd.imageUrl}
-        alt={currentAd.title}
-        className="w-full h-[250px] object-cover rounded"
-      />
-      <h2 className="text-xl font-bold text-gray-200 mt-3">{currentAd.title}</h2>
-      <p className="text-gray-300 mt-1 ">{currentAd.description}</p>
-      <a
-        href={currentAd.ctaLink}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-block mt-4 px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-      >
-        {currentAd.ctaText}
-      </a>
-    </div>
+    <a href={currentAd.ctaLink} target="_blank">
+      <div className="max-w-3xl mx-auto bg-gray-700 shadow-lg rounded overflow-hidden p-4 border border-gray-200 transition-all duration-700 m-10 h-[80%]">
+        <img
+          src={currentAd.imageUrl}
+          alt={currentAd.title}
+          className="w-full h-[250px] object-cover rounded"
+        />
+        <h2 className="text-xl font-bold text-gray-200 mt-3">{currentAd.title}</h2>
+        <p className="text-gray-300 mt-1 ">{currentAd.description}</p>
+        <a
+          href={currentAd.ctaLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block mt-4 px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+        >
+          {currentAd.ctaText}
+        </a>
+      </div>
+    </a>
   );
 };
 

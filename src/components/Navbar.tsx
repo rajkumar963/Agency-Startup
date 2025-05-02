@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="w-12 h-10 mr-2 rounded-md bg-gradient-purple-blue flex items-center justify-center">
               <span className="text-white text-lg font-bold">TSW</span>
             </div>
-            <span className="font-montserrat font-bold text-xl text-white">F2X0</span>
+            <span className="font-montserrat font-bold text-xl text-white">F2XO</span>
           </a>
         </div>
 
@@ -53,7 +53,7 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center space-x-8">
           <a href="#services" className="text-white/80 hover:text-vibrant-blue transition-colors">Services</a>
           <Link to="/resources" className="text-white/80 hover:text-vibrant-blue transition-colors">Resources</Link>
-          <Link to="/allkhajna" className="text-white/80 hover:text-vibrant-blue transition-colors">Khajna</Link>
+          <Link to="/allkhajna" className="text-white/80 hover:text-vibrant-blue transition-colors">Khazana</Link>
           <Link to="/auth">
             <Button className="bg-gradient-purple-blue hover:opacity-90 transition-opacity">
               Get Started
@@ -92,7 +92,7 @@ const Navbar = () => {
               onClick={() => handleMobileNavClick('/allkhajna')}
               className="text-left text-white/80 hover:text-vibrant-blue transition-colors py-2"
             >
-              Khajna
+              Khazana
             </button>
             <button
               onClick={() => handleMobileNavClick('/auth')}

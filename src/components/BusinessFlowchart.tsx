@@ -3,16 +3,16 @@ import { motion } from 'framer-motion';
 import { ExternalLink } from 'lucide-react';
 
 const flowSteps = [
-  { id: 1, title: 'Find Problem', description: 'Validate your idea with our market fit framework', link:'/businessesideas'},
-  { id: 2, title: 'Test Idea', description: 'Find co-founders and build your initial team', link: '/mvpblueprint' },
-  { id: 3, title: 'Pick Model', description: 'Create your minimum viable product efficiently', link: '/pickmodels' },
-  { id: 4, title: 'Build Team', description: 'Track cash flow and manage startup finances', link: '#' },
-  { id: 5, title: 'Make Plan', description: 'Strategies for a successful product launch', link: '#' },
-  { id: 6, title: 'Get Cash', description: 'Scale your business with proven tactics', link: '#' },
-  { id: 7, title: 'Build Product', description: 'Define your exit strategy and secure funding', link: '#' },
-  { id: 8, title: 'Find Customers', description: 'Strategies for a successful product launch', link: '#' },
-  { id: 9, title: 'Grow Right', description: 'Scale your business with proven tactics', link: '#' },
-  { id: 10, title: 'Stay Flexible', description: 'Define your exit strategy and secure funding', link: '#' },
+  { id: 1, title: 'Identify a Problem or the Need', description: 'Validate your idea with our market fit framework', link:'/businessesideas'},
+  { id: 2, title: 'Generate and Brainstorm Ideas', description: 'Find co-founders and build your initial team', link: '/mvpblueprint' },
+  { id: 3, title: 'Evaluate and Select the Best Idea', description: 'Create your minimum viable product efficiently', link: '/pickmodels' },
+  { id: 4, title: 'Conduct Market Research', description: 'Track cash flow and manage startup finances', link: '#' },
+  { id: 5, title: 'Gather Feedback and Refine the Idea', description: 'Strategies for a successful product launch', link: '#' },
+  { id: 6, title: 'Develop an MVP or Prototype', description: 'Scale your business with proven tactics', link: '#' },
+  { id: 7, title: 'Test the Market', description: 'Define your exit strategy and secure funding', link: '#' },
+  { id: 8, title: 'Build Your Team', description: 'Strategies for a successful product launch', link: '#' },
+  { id: 9, title: 'Plan Operations and Secure Resources', description: 'Scale your business with proven tactics', link: '#' },
+  { id: 10, title: 'Establish Feedback Loops and Continuous Improvement', description: 'Define your exit strategy and secure funding', link: '#' },
 ];
 
 const cardVariants = {
@@ -108,7 +108,7 @@ const BusinessFlowchart = () => {
                           <div className="w-10 h-10 flex-shrink-0 flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl text-white font-bold text-lg shadow-md">
                             {step.id}
                           </div>
-                          <div>
+                          <div >
                             <h4 className="text-white font-semibold text-lg mb-2">{step.title}</h4>
                             {/* <p className="text-zinc-400 text-md mb-2">{step.description}</p> */}
                             <a
